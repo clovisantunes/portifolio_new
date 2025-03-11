@@ -1,4 +1,4 @@
-import React, { JSX } from 'react';
+import { JSX } from 'react';
 import styles from "./styles.module.scss";
 import { FaCode, FaDatabase, FaSearch, FaServer } from 'react-icons/fa'; 
 
