@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--baseDark);
+    color: var(--gray300);
+    text-align: center;
+    font-family: var(--font-family-tertiary);
+    font-size: var(--text-md-font-size);
+    font-weight: var(--text-md-font-weight);
+    border-top: 1px solid var(--baseMedium);
+  }
+  
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: var(--primary);
+  }

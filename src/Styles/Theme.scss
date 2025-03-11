@@ -1,0 +1,64 @@
+// theme.scss
+
+// Cores
+:root {
+  // Cores Principais
+  --primary: #E3646E;
+  --secondary: #BB72E9;
+  --accent: #3996DB;
+  --success: #82BC4F;
+  --warning: #EABD5F;
+
+  // Cores Adicionais
+  --red: #E3646E;
+  --purple: #BB72E9;
+  --blue: #3996DB;
+  --green: #82BC4F;
+  --yellow: #EABD5F;
+
+  // Cores de Base
+  --baseDark: #0D0E11;
+  --baseMedium: #16181D;
+  --baseLight: #292C34;
+  --gray100: #878EA1;
+  --gray200: #C0C4CE;
+  --gray300: #E2E4E9;
+  --gray400: #878EA1;
+  --gray500: #C0C4CE;
+  --gray600: #E2E4E9;
+}
+
+// Tipografia
+:root {
+  // Fontes
+  --font-family-primary: 'Asap', sans-serif; // Fonte para títulos
+  --font-family-secondary: 'Inconsolata', monospace; // Fonte para subtítulos
+  --font-family-tertiary: 'Maven Pro', sans-serif; // Fonte para textos
+
+  // Títulos
+  --title-lg-font-size: 56px;
+  --title-lg-line-height: 120%;
+  --title-lg-font-weight: bold;
+
+  --title-md-font-size: 24px;
+  --title-md-line-height: 120%;
+  --title-md-font-weight: bold;
+
+  --title-sm-font-size: 16px;
+  --title-sm-line-height: 120%;
+  --title-sm-font-weight: bold;
+
+  // Subtítulos
+  --subtitle-font-size: 20px;
+  --subtitle-line-height: 120%;
+  --subtitle-font-weight: regular;
+
+  // Textos
+  --text-md-font-size: 16px;
+  --text-md-line-height: 140%;
+  --text-md-font-weight: regular;
+
+  --text-sm-font-size: 14px;
+  --text-sm-line-height: 140%;
+  --text-sm-font-weight: regular;
+}

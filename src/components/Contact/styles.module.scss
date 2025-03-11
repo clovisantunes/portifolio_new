@@ -1,0 +1,153 @@
+.contact_container {
+    width: 100%;
+    height: 36em;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url('../../assets/Background_Contacts.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .contact_container .titles {
+    margin-bottom: 40px;
+  }
+  
+  .contact_container .titles h1 {
+    font-size: var(--title-md-font-size);
+    color: var(--purple);
+    margin-bottom: 16px;
+    animation: slideIn 0.5s ease-in-out 0.3s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .contact_container .titles span {
+    font-size: var(--title-md-font-size);
+    font-weight: var(--title-md-font-weight);
+    color: var(--gray300);
+    animation: slideIn 0.5s ease-in-out 0.5s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .contact_container .titles p {
+    font-size: var(--text-md-font-size);
+    color: var(--gray200);
+    margin-top: 8px;
+    animation: slideIn 0.5s ease-in-out 0.7s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .contact_container .buttonsContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .contact_container .buttonsContact .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    border: 1px solid var(--baseMedium);
+    border-radius: 8px;
+    background-color: var(--baseLight);
+    color: var(--gray300);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInButton 0.5s ease-in-out forwards;
+    animation-delay: calc(0.2s * var(--i));
+  }
+  
+  .contact_container .buttonsContact .button:hover {
+    background-color: var(--baseMedium);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact_container .buttonsContact .button .icon {
+    margin-right: 12px;
+    color: var(--gray400);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact_container .buttonsContact .button .text {
+    flex: 1;
+    text-align: left;
+    margin-left: 16px;
+    color: var(--gray400);
+    font-size: var(--text-md-font-size);
+    font-weight: var(--text-md-font-weight);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact_container .buttonsContact .button .arrow {
+    margin-left: 16px;
+    color: var(--blue);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact_container .buttonsContact .button:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  .contact_container .buttonsContact .button:hover .icon,
+  .contact_container .buttonsContact .button:hover .text {
+    color: var(--gray500);
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInButton {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
