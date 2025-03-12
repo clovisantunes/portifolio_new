@@ -9,7 +9,7 @@
     padding: 20px;
     text-align: center;
     background-color: var(--baseDark);
-  
+
     .title {
       margin-bottom: 40px;
   
@@ -24,7 +24,9 @@
         color: var(--gray300);
       }
     }
-  
+    @media (max-width: 768px) {
+      height: auto;
+    }
     .services {
       display: flex;
       flex-wrap: wrap;
