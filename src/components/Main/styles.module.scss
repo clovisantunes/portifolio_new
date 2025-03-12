@@ -68,7 +68,11 @@
   border-radius: 50%;
   pointer-events: none;
 }
-
+.vector{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .presentation {
   text-align: center;
   align-items: center;

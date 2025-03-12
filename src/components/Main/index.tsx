@@ -37,7 +37,7 @@ export default function Main() {
     <>
       <div className={styles.main_container}>
         <div className={styles.logo}>
-          <img src={vector} alt='Vector' />
+          <img src={vector} alt='Vector' className={styles.vector} />
         </div>
         <div className={styles.presentation}>
           <h1>Hello World! Meu nome é <p>Clovis Antunes</p> e eu sou</h1>
