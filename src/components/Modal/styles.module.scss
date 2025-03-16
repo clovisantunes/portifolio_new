@@ -1,0 +1,88 @@
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal_content {
+  background-color: var(--baseMedium);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  color: var(--gray300);
+  font-family: var(--font-family-tertiary);
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: var(--title-md-font-size);
+    font-weight: var(--title-md-font-weight);
+    line-height: var(--title-md-line-height);
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  span {
+    font-size: var(--text-md-font-size);
+    line-height: var(--text-md-line-height);
+    color: var(--gray200);
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--gray300);
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: var(--accent); // Cor de destaque ao passar o mouse
+    }
+  }
+  
+  .contact_button {
+    background-color: var(--accent); // Cor de destaque (azul)
+    color: var(--baseDark); // Texto escuro para contraste
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: var(--text-md-font-size);
+    font-family: var(--font-family-tertiary);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  
+    &:hover {
+      background-color: var(--blue); // Cor azul mais clara ao passar o mouse
+      transform: translateY(-2px); // Efeito de levantar o botão
+    }
+  
+    &:active {
+      transform: translateY(0); // Efeito de pressionar o botão
+    }
+  }
+  
